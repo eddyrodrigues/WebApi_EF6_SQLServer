@@ -4,7 +4,7 @@ using Blog.Repository.Contracts;
 
 namespace Blog.Repository.Repositories;
 
-public class CategoryRepository : IBaseRepository
+public class CategoryRepository : IBaseRepository<Category>
 {
   private readonly BlogDbContext _context;
 
