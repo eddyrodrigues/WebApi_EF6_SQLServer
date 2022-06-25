@@ -2,8 +2,8 @@ using Blog.Domain.Entities;
 
 namespace Blog.Repository.Contracts;
 
-public interface IBaseRepository
+public interface IBaseRepository<T>
 {
   public Category GetByGuid(Guid guid);
-  public List<Category> GetAll();
+  public List<T> GetAll();
 }
